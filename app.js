@@ -7,10 +7,10 @@ var cors = require('cors')
 var db = require('./db/mongoose')
 
 var formRouter = require('./routes/form');
-var safePeople = require('./routes/safePeople')
-var unSafePeople = require('./routes/unsafePeople')
-var safeSpot = require('./routes/safeSpots')
-var liveUpdate = require('./routes/liveUpdate')
+// var safePeople = require('./routes/safePeople')
+// var unSafePeople = require('./routes/unsafePeople')
+// var safeSpot = require('./routes/safeSpots')
+// var liveUpdate = require('./routes/liveUpdate')
 var auth = require('./routes/auth')
 
 var app = express();
@@ -29,10 +29,10 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(cors());
 
 app.use('/', formRouter);
-app.use('/safePeople', safePeople)
-app.use('/unsafePeople', unSafePeople)
-app.use('/', safeSpot)
-app.use('/liveUpdate', liveUpdate)
+// app.use('/safePeople', safePeople)
+// app.use('/unsafePeople', unSafePeople)
+// app.use('/', safeSpot)
+// app.use('/liveUpdate', liveUpdate)
 app.use('/user', auth)
 
 if (process.env.NODE_ENV === 'production') {

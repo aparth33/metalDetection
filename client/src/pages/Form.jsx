@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import FormComponent from '../components/FormComponent';
-import SafePeople from '../components/SafePeople';
+// import SafePeople from '../components/SafePeople';
 
 const useStyles = makeStyles((theme) => ({
 	card: {
@@ -32,9 +32,9 @@ const PersonForm = () => {
 				</CardContent>
 			</Card>
 			<Card className={classes.card} style={{ flexBasis: '30' }}>
-				<CardContent>
+				{/* <CardContent>
 					<SafePeople />
-				</CardContent>
+				</CardContent> */}
 			</Card>
 		</div>
 	);

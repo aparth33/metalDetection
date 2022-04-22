@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost:27017/disaster_management', {
+mongoose.connect("mongodb+srv://ishant:ishant@cluster0.zghfh.mongodb.net/disaster_management?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

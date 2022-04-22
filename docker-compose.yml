@@ -30,7 +30,7 @@ services:
       - ./:/usr/src/lifemaxx/server/
       - /usr/src/lifemaxx/server/node_modules
     ports:
-      - '5000:5000'
+      - '5002:5002'
     depends_on:
       - mongo
     environment:

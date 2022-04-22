@@ -4,14 +4,14 @@ const cloudinaryStorage = require("multer-storage-cloudinary");
 var Person = require('../models/person')
 
 cloudinary.config({
-    cloud_name: 'ishant',
-    api_key: '197661493971768',
-    api_secret: process.env.CLOUDINARY_API_KEY
+    cloud_name: 'bits-goa-metal-detection',
+    api_key: '357279137272785',
+    api_secret: '8f7iXoUKSej1lx0qoTx67R6mwWc'
 });
 
 const storage = cloudinaryStorage({
     cloudinary: cloudinary,
-    folder: "images_disaster_project",
+    folder: "bits-goa-metal-detection",
     allowedFormats: ["jpg", "jpeg", "png"],
     transformation: [{
         width: 500,

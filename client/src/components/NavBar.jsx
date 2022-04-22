@@ -9,14 +9,14 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import HomeIcon from '@material-ui/icons/Home';
-import MapIcon from '@material-ui/icons/Map';
+// import MapIcon from '@material-ui/icons/Map';
 import PeopleIcon from '@material-ui/icons/People';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
-import AccessibilityIcon from '@material-ui/icons/Accessibility';
+// import AccessibilityIcon from '@material-ui/icons/Accessibility';
 import Typography from '@material-ui/core/Typography';
-import DashboardIcon from '@material-ui/icons/Dashboard';
+// import DashboardIcon from '@material-ui/icons/Dashboard';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 const drawerWidth = 240;
@@ -67,7 +67,7 @@ function NavBar({ children, location }) {
 				style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
 			>
 				<Typography variant="h4" noWrap style={{ color: 'white' }}>
-					lifeMaxx
+					Detection
 				</Typography>
 			</div>
 			<Divider />
@@ -87,9 +87,9 @@ function NavBar({ children, location }) {
 					<ListItemIcon style={{ color: 'white' }}>
 						<PeopleIcon />
 					</ListItemIcon>
-					People Details
+					Upload Image
 				</MenuItem>
-				<MenuItem style={{ color: 'white' }} component={Link} to="/map" selected={'/map' === location.pathname}>
+				{/* <MenuItem style={{ color: 'white' }} component={Link} to="/map" selected={'/map' === location.pathname}>
 					<ListItemIcon style={{ color: 'white' }}>
 						<MapIcon />
 					</ListItemIcon>
@@ -116,7 +116,7 @@ function NavBar({ children, location }) {
 						<DashboardIcon />
 					</ListItemIcon>
 					Dashboard
-				</MenuItem>
+				</MenuItem> */}
 			</MenuList>
 			{/* <Divider />
       <List>
