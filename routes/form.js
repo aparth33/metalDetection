@@ -14,6 +14,7 @@ router.post('/form', parser.single('image'), async function (req, res, next) {
       delete form.lastLocationLong
     }
     let person = new Person(form)
+    console.log(">>>>>>>>",form,req.file.url)
     if (req.file)
       person = new Person({
         ...form,
@@ -29,10 +30,10 @@ router.post('/form', parser.single('image'), async function (req, res, next) {
 });
 
 router.get('/', function (req, res, next) {
-  // var person = new Person({
-  //   name: 'ishant'
-  // })
-  // person.save()
+  var person = new Person({
+    name: 'admin'
+  })
+  person.save()
   res.json({
     "test": "initial setup done"
   })

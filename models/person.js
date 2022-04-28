@@ -6,26 +6,31 @@ const personSchema = mongoose.Schema({
         required: true
     },
     image: {
-        type: String
-    },
-    age: {
-        type: Number
-    },
-    rescueCentre: {
-        type: String
-    },
-    number: Number,
-    relatives: [{
-        type: mongoose.Schema.Types.ObjectId
-    }],
-    lastLocation: {
-        type: [Number]
-    },
-    foundLost: {
         type: String,
-        enum: ['Found', 'NotFound'],
-        default: 'Found'
+        required:true
+    },
+    details:{
+        type:String,
+        required:true
     }
+    // age: {
+    //     type: Number
+    // },
+    // rescueCentre: {
+    //     type: String
+    // },
+    // number: Number,
+    // relatives: [{
+    //     type: mongoose.Schema.Types.ObjectId
+    // }],
+    // lastLocation: {
+    //     type: [Number]
+    // },
+    // foundLost: {
+    //     type: String,
+    //     enum: ['Found', 'NotFound'],
+    //     default: 'Found'
+    // }
 }, {
     timestamps: true
 })
