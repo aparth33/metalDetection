@@ -15,7 +15,7 @@ router.post('/form', parser.single('image'), async function (req, res, next) {
     }
     let person = new Person(form)
     console.log(">>>>>>>>",form,req.file.url)
-    if (req.file)
+    
       person = new Person({
         ...form,
         image: req.file.url
